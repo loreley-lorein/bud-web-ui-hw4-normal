@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DNA</title>
+  </head>
+  <body>
+    <script>
+      const initDna = prompt("Input DNA");
+      let answerDna = "";
+      for (let i = 0; i < initDna.length; i++) {
+        if (initDna[i] === "A") {
+          answerDna = answerDna + "T";
+        }
+        if (initDna[i] === "T") {
+          answerDna = answerDna + "A";
+        }
+        if (initDna[i] === "G") {
+          answerDna = answerDna + "C";
+        }
+        if (initDna[i] === "C") {
+          answerDna = answerDna + "G";
+        }
+      }
+      alert(answerDna);
+    </script>
+  </body>
+</html>

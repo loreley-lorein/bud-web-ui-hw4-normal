@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucky ticket</title>
+  </head>
+  <body>
+    <script>
+      const ticketNum = prompt("Input ticket number");
+      const arrayStr = ticketNum.split("");
+      const firstPart =
+        Number(arrayStr[0]) + Number(arrayStr[1]) + Number(arrayStr[2]);
+      const secondPart =
+        Number(arrayStr[3]) + Number(arrayStr[4]) + Number(arrayStr[5]);
+      if (firstPart === secondPart) {
+        alert("Lucky ticket");
+      } else {
+        alert("Not lucky ticket");
+      }
+    </script>
+  </body>
+</html>
